@@ -25,21 +25,7 @@ def upload_image():
         if file.filename == '':
             return redirect(request.url)
 
-        basedir = os.path.abspath(os.path.dirname(__file__))  # 定义一个根目录 用于保存图片用
-
-        # def editorData():
-        #     imgName = file.filename
-        #     # 定义一个图片存放的位置 存放在static下面
-        #     path = basedir + "/"
-        #     # 图片path和名称组成图片的保存路径
-        #     file_path = path + imgName
-        #     # 保存图片
-        #     file.save(file_path)
-        #     # 这个是图片的访问路径，需返回前端（可有可无）
-        #     url = '/static/img/' + imgName
-        #     return url
-        #     # 返回图片路径 到前端
-
+        basedir = os.path.abspath(os.path.dirname(__file__))  # 定义一个根目录 用于保存图片用(.py同一个文件夹)
         def editorData():
             imgName = file.filename
             # 定义一个图片存放的位置 存放在static下面
