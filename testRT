@@ -1,0 +1,8 @@
+<html>
+<head>
+  <title>helloGCP, {{ username }}</title>
+</head>
+<body>
+  <p>helloGCP, {{ username }}!</p>
+</body>
+</html>
