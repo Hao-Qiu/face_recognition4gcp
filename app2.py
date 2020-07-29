@@ -28,7 +28,6 @@ def upload_image():
         basedir = os.path.abspath(os.path.dirname(__file__))  # 定义一个根目录 用于保存图片用(.py同一个文件夹)
         def editorData():
             imgName = "000.jpg"
-            # 定义一个图片存放的位置 存放在static下面
             path = basedir + "/"
             # 图片path和名称组成图片的保存路径
             file_path = path + imgName
@@ -37,8 +36,8 @@ def upload_image():
             # 这个是图片的访问路径，需返回前端（可有可无）
             return file_path
             # 返回图片路径 到前端
-
-        return editorData()
+        # return editorData() # 返回后端url
+        return output()
 
 
     # 图片上传失败，输出以下html代码
@@ -61,6 +60,10 @@ def upload_image():
 #     }
 #     return jsonify(result)
 
+# 调用shell进行face recognition
+def output():
+    v_return_status = os.system('sh face_rec.sh')
+    return str(v_return_status)
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5001, debug=True)
