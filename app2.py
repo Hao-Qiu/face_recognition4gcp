@@ -35,8 +35,7 @@ def upload_image():
             # 保存图片
             file.save(file_path)
             # 这个是图片的访问路径，需返回前端（可有可无）
-            url = '/static/img/' + imgName
-            return url
+            return file_path
             # 返回图片路径 到前端
 
         return editorData()
