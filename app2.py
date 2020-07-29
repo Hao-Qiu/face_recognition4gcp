@@ -27,7 +27,7 @@ def upload_image():
 
         basedir = os.path.abspath(os.path.dirname(__file__))  # 定义一个根目录 用于保存图片用(.py同一个文件夹)
         def editorData():
-            imgName = file.filename
+            imgName = "000.jpg"
             # 定义一个图片存放的位置 存放在static下面
             path = basedir + "/"
             # 图片path和名称组成图片的保存路径
