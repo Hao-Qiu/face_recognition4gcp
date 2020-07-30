@@ -21,7 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="63c446ab-7fe7-41d9-a54e-01f1a95641a4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locust/kubernetes/templates/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/locust/kubernetes/templates/deployment.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/locust/docker/locust/dummy_loadtest.py" beforeDir="false" afterPath="$PROJECT_DIR$/locust/docker/locust/dummy_loadtest.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +75,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1596053006413</updated>
-      <workItem from="1596111224399" duration="6189000" />
+      <workItem from="1596111224399" duration="7087000" />
     </task>
     <task id="LOCAL-00001" summary="docker部分修改以及upload docker">
       <created>1596117270917</created>
@@ -91,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596119869266</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="locust deployment需要添加img地址和测试网址">
+      <created>1596123017071</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1596123017071</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,25 +121,26 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="docker部分修改以及upload docker" />
     <MESSAGE value="Locust相关构架" />
-    <option name="LAST_COMMIT_MESSAGE" value="Locust相关构架" />
+    <MESSAGE value="locust deployment需要添加img地址和测试网址" />
+    <option name="LAST_COMMIT_MESSAGE" value="locust deployment需要添加img地址和测试网址" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2184" y="215" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1596119659083">
       <screen x="1680" y="23" width="1600" height="877" />
     </state>
     <state x="2184" y="215" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1680.23.1600.877/0.23.1680.1027@1680.23.1600.877" timestamp="1596119659083" />
-    <state x="2055" y="23" key="CommitChangelistDialog2" timestamp="1596119869117">
+    <state x="2055" y="23" key="CommitChangelistDialog2" timestamp="1596123016903">
       <screen x="1680" y="23" width="1600" height="877" />
     </state>
-    <state x="2055" y="23" key="CommitChangelistDialog2/1680.23.1600.877/0.23.1680.1027@1680.23.1600.877" timestamp="1596119869117" />
+    <state x="2055" y="23" key="CommitChangelistDialog2/1680.23.1600.877/0.23.1680.1027@1680.23.1600.877" timestamp="1596123016903" />
     <state x="1955" y="100" key="SettingsEditor" timestamp="1596111287430">
       <screen x="1680" y="23" width="1600" height="877" />
     </state>
     <state x="1955" y="100" key="SettingsEditor/1680.23.1600.877/0.23.1680.1027@1680.23.1600.877" timestamp="1596111287430" />
-    <state x="2046" y="197" key="Vcs.Push.Dialog.v2" timestamp="1596119875857">
+    <state x="2046" y="197" key="Vcs.Push.Dialog.v2" timestamp="1596123020653">
       <screen x="1680" y="23" width="1600" height="877" />
     </state>
-    <state x="2046" y="197" key="Vcs.Push.Dialog.v2/1680.23.1600.877/0.23.1680.1027@1680.23.1600.877" timestamp="1596119875857" />
+    <state x="2046" y="197" key="Vcs.Push.Dialog.v2/1680.23.1600.877/0.23.1680.1027@1680.23.1600.877" timestamp="1596123020653" />
     <state x="2123" y="294" key="com.intellij.ide.util.TipDialog" timestamp="1596111229522">
       <screen x="1680" y="23" width="1600" height="877" />
     </state>
