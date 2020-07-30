@@ -20,10 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63c446ab-7fe7-41d9-a54e-01f1a95641a4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/face_recognition4gcp.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/upload_docker.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/face_recognition4gcp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/face_recognition4gcp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run_docker.sh" beforeDir="false" afterPath="$PROJECT_DIR$/run_docker.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +48,14 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -61,15 +72,21 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1596053006413</updated>
+      <workItem from="1596111224399" duration="3854000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -77,5 +94,19 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2184" y="215" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1596111589087">
+      <screen x="1680" y="23" width="1600" height="877" />
+    </state>
+    <state x="2184" y="215" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1680.23.1600.877/0.23.1680.1027@1680.23.1600.877" timestamp="1596111589087" />
+    <state x="1955" y="100" key="SettingsEditor" timestamp="1596111287430">
+      <screen x="1680" y="23" width="1600" height="877" />
+    </state>
+    <state x="1955" y="100" key="SettingsEditor/1680.23.1600.877/0.23.1680.1027@1680.23.1600.877" timestamp="1596111287430" />
+    <state x="2123" y="294" key="com.intellij.ide.util.TipDialog" timestamp="1596111229522">
+      <screen x="1680" y="23" width="1600" height="877" />
+    </state>
+    <state x="2123" y="294" key="com.intellij.ide.util.TipDialog/1680.23.1600.877/0.23.1680.1027@1680.23.1600.877" timestamp="1596111229522" />
   </component>
 </project>

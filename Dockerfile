@@ -35,10 +35,11 @@ RUN cd ~ && \
 WORKDIR /app
 
 # Copy source code to working directory
-COPY app.py /app/
-COPY requirements.txt /app/
+COPY app/app2.py /app/
+COPY requirement.txt /app/
 RUN mkdir /app/templates
-COPY templates/index.html /app/templates/
+COPY templates/templates ./app/templates/templates
+COPY templates/static/ ./app/templates/static
 
 # Install packages from requirements.txt
 RUN pip install --upgrade pip &&\
