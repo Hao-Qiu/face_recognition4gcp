@@ -2,12 +2,17 @@ import os
 import face_recognition
 import os
 from flask import Flask, jsonify, request, redirect,render_template
+import time
+from datetime import timedelta
 
 # You can change this to any folder on your system
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg', 'gif'}
 
 app = Flask(__name__,template_folder='/Users/hao_qiu/Documents/gcp/face_recognition4gcp/templates/templates',\
-            static_folder='/Users/hao_qiu/Documents/gcp/face_recognition4gcp/templates/static',)
+            static_folder='/Users/hao_qiu/Documents/gcp/face_recognition4gcp/templates/static')
+app.config['DEBUG']=True
+app.config['SEND_FILE_MAX_AGE_DEFAULT'] = timedelta(seconds=6)
+
 def allowed_file(filename):
     return '.' in filename and \
            filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
@@ -35,7 +40,7 @@ def upload_image():
             file.save(file_path)
             result = os.popen('face_recognition --cpus 5  app/know/ /Users/hao_qiu/Documents/gcp/face_recognition4gcp/templates/static/pictures_of_people_unknow').read() 
             results='The people is \t'+result.split(',')[-1]
-            return render_template('result.html', fname=results)
+            return render_template('result.html', fname=results, var1=time.time())
         return editorData()
     
     return render_template('predict.html')

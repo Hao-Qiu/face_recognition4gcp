@@ -6,7 +6,7 @@
         top:150px;
         left:450px;} 
     </style>
-    <img src="../static/pictures_of_people_unknow/unknow.jpg" width="500" > 
+    <img id='imgs' src="{{url_for('static',filename='../static/pictures_of_people_unknow/unknow.jpg',_t=val1)}}">
 
    
     <style > 
@@ -22,6 +22,10 @@
 				/*定义文字水平位置*/
             }
     
+            center｛
+        margin-top:50px;
+        ｝
+
     </style>
         
     <h1><center>{{fname}}</center></h1>
