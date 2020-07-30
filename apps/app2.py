@@ -29,7 +29,7 @@ def upload_image():
         if file.filename == '':
             return redirect(request.url)
 
-        #basedir = os.path.abspath(os.path.dirname(__file__))  # 定义一个根目录 用于保存图片用(.py同一个文件夹)
+        # basedir = os.path.abspath(os.path.dirname(__file__))  # 定义一个根目录 用于保存图片用(.py同一个文件夹)
         def editorData():
             imgName = file.filename
             # 定义一个图片存放的位置 存放在static下面
@@ -58,4 +58,4 @@ def upload_image():
 
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=8081, debug=True)
+    app.run(host='0.0.0.0', port=8080, debug=True)
