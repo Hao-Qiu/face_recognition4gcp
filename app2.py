@@ -1,6 +1,5 @@
 import os
-import face_recognition
-from flask import Flask, jsonify, request, redirect
+from flask import Flask, jsonify, request, redirect, render_template
 
 # You can change this to any folder on your system
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg', 'gif'}
@@ -33,12 +32,11 @@ def upload_image():
             file_path = path + imgName
             # 保存图片
             file.save(file_path)
-            # 这个是图片的访问路径，需返回前端（可有可无）
-            return file_path
-            # 返回图片路径 到前端
+        #     通过img_stream实现本地图片输出前端
+            return render_template('index.html',
+                                   file = file)
         # return editorData() # 返回后端url
-        return output()
-
+        return editorData()
 
     # 图片上传失败，输出以下html代码
     return '''
@@ -66,4 +64,4 @@ def output():
     return str(v_return_status)
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=5001, debug=True)
+    app.run(host='0.0.0.0', port=8080, debug=True)
