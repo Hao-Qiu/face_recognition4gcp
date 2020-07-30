@@ -1,8 +1,8 @@
 Flask==1.0.2
-face_recognition
 cmake
 Click>=6.0
 dlib>=19.3.0
+face_recognition
 numpy
 Pillow
 scipy>=0.17.0
