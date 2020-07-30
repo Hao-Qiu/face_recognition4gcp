@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文件读取</title>
+</head>
+<body>
+    <input type="file" class="file" multiple>
+    <img src="" alt="" id="img"  style="height:200px;">
+    <script>
+        var file=document.querySelector(".file")
+        file.onchange=function(){
+            var reader=new FileReader();
+            reader.readAsDataURL(this.files[0]);
+            reader.onload=function(){
+                document.querySelector("#img").src=this.result;
+            }
+        }
+    </script>
+
+<div class="navbar">
+  <a href="result">run</a>
+</div>
+</body>
+</html>
