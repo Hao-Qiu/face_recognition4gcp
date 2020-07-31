@@ -1,9 +1,12 @@
 FROM python:3.7.3-stretch
 
+
 # 以下改编自mentor的dockerfile
 # Working Directory
 WORKDIR /app
+
 # Copy source code to working directory
+
 COPY . /app/
 
 # Install packages from requirements.txt

@@ -6,4 +6,4 @@
 /usr/local/bin/docker image ls
 
 # Run flask app
-/usr/local/bin/docker run -p 8080:8080 face_whirecognition4gcp
+docker run -p 8080:8080 face_recognition4gcp
