@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
         - name: locust
-          image: us-central1.gcr.io/facerecognition4gcp/locust:latest
+          image: gcr.io/th-project-282812/locust-tasks:latest
           imagePullPolicy: Always
           env:
             - name: LOCUST_MODE
@@ -63,7 +63,7 @@ spec:
     spec:
       containers:
         - name: locust
-          image: us-central1.gcr.io/facerecognition4gcp/locust:latest
+          image: gcr.io/th-project-282812/locust-tasks:latest
           imagePullPolicy: Always
           env:
             - name: LOCUST_MODE
