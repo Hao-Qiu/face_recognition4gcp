@@ -1,7 +1,5 @@
 import os
-import face_recognition
-import os
-from flask import Flask, jsonify, request, redirect,render_template
+from flask import Flask, request, redirect,render_template
 import time
 from datetime import timedelta
 
@@ -40,7 +38,7 @@ def upload_image():
             file.save(file_path)
             result = os.popen('face_recognition --cpus 5  ./apps/know/ ./templates/static/pictures_of_people_unknow').read() 
             results='The person is \t'+result.split(',')[-1]
-            return render_template('result.html', fname=results, var1 = time.time())
+            return render_template('result.html', fname=results, var1 = time.time(), )
         return editorData()
     
     return render_template('predict.html')
