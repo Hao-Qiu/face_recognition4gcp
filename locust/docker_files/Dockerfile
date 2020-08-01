@@ -10,7 +10,7 @@ RUN pip install -r requirements.txt
 COPY run.sh .
 COPY post_img.py .
 COPY Eareyan.jpg .
-COPY Zhang.jpeg .
+COPY Zhang.jpg .
 COPY testbase.py .
 
 # Expose the required Locust ports
