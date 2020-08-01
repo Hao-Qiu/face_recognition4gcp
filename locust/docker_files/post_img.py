@@ -1,5 +1,5 @@
 from testbase import Testbase
-from locust import HttpUser, task
+from locust import HttpLocust, task
 import logging
 import time
 
