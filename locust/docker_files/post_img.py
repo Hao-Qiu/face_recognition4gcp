@@ -31,4 +31,4 @@ class PostImg(Testbase):
                                                  duration=round(time_end - time_start, 3)))
 
 class WebsiteUser(HttpLocust):
-    task_set = PostImg
+    task_set = [PostImg]
