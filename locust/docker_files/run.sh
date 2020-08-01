@@ -1,6 +1,6 @@
 #!/bin/bash
 LOCUST="/usr/local/bin/locust"
-LOCUS_OPTS="-f post_img.py --host=$LOCUST_TARGET_HOST"
+LOCUS_OPTS="-f post_img.py --host=https://facerecognitionserver-53hqap5biq-uc.a.run.app/"
 LOCUST_MODE=${LOCUST_MODE:-standalone}
 
 if [[ "$LOCUST_MODE" = "master" ]]; then
