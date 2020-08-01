@@ -11,3 +11,6 @@ class Testbase(TaskSet):
             br = io.BufferedReader(io.BytesIO(file_bytes))
             self.client.post('/' ,files = {'image_file':br})
 
+    def load_file(self, filePath):
+        with open(filePath, 'rb') as fp:
+            return fp.read()
