@@ -4,18 +4,21 @@ FROM python:3.7.2
 # Add the external tasks directory into /tasks
 WORKDIR /src
 
-ADD requirements.txt .
+COPY requirements.txt .
 RUN pip install -r requirements.txt
 
-ADD run.sh .
-ADD post_img.py .
+COPY run.sh .
+COPY post_img.py .
+COPY Eareyan.jpg .
+COPY Zhang.jpeg .
+COPY testbase.py .
 
 # Expose the required Locust ports
 EXPOSE 5557 5558 8089
 
 # Set script to be executable
-RUN chmod +x run.sh
+RUN chmod 755 run.sh
 
 # Start Locust using LOCUS_OPTS environment variable
-CMD ["run.sh"]
+ENTRYPOINT ["bash", "run.sh"]
 
