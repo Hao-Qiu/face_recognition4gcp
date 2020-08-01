@@ -14,7 +14,7 @@ ADD locust/post_img.py .
 EXPOSE 5557 5558 8089
 
 # Set script to be executable
-RUN chmod +x locust/run.sh
+RUN chmod +x run.sh
 
 # Start Locust using LOCUS_OPTS environment variable
 CMD ["run.sh"]
