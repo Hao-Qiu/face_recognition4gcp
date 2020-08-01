@@ -17,5 +17,5 @@ EXPOSE 5557 5558 8089
 RUN chmod +x run.sh
 
 # Start Locust using LOCUS_OPTS environment variable
-CMD ./locust/run.sh
+CMD run.sh
 
