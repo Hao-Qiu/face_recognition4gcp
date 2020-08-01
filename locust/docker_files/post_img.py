@@ -23,7 +23,7 @@ class PostImg(Testbase):
     def post_15k_image(self):
         time_start = time.time()
         self.post_image('Eareyan.jpg')
-        response = self.client.get("/")
+        response = self.client.get("//")
         time_end = time.time()
         logger.info("Response - URL: {url}. Status code: {status}. "
                     "Latency: {duration}".format(url=response.url,
@@ -31,4 +31,4 @@ class PostImg(Testbase):
                                                  duration=round(time_end - time_start, 3)))
 
 class WebsiteUser(HttpLocust):
-    task_set = [PostImg]
+    task_set = PostImg
