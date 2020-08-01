@@ -9,5 +9,5 @@ class Testbase(TaskSet):
         for item in image_files:
             file_bytes = self.load_file(item)
             br = io.BufferedReader(io.BytesIO(file_bytes))
-            self.client.post(a ,files = {'image_file':br})
+            self.client.post("" ,files = {'image_file':br})
 
